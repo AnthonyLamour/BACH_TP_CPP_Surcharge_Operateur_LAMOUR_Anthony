@@ -10,7 +10,7 @@
 //
 //********************************************************************************************************************************************************************************
 //25-01-2019 LAMOUR Anthony
-//25-01-2019 LAMOUR Anthony
+//29-01-2019 LAMOUR Anthony
 //********************************************************************************************************************************************************************************
 
 #pragma once
@@ -27,9 +27,9 @@ public:
 
 	//mutateur et assesseur
 	float getPtX()const;
-	void setPtX(float fltX);
+	void setPtX(float const& fltX);
 	float getPtY()const;
-	void setPtY(float fltY);
+	void setPtY(float const& fltY);
 
 	//constructeur
 	CPoint2D();

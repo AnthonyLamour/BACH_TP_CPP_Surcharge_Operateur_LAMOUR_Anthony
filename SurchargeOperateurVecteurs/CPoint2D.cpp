@@ -6,7 +6,7 @@
 //
 //********************************************************************************************************************************************************************************
 //25-01-2019 LAMOUR Anthony
-//25-01-2019 LAMOUR Anthony
+//29-01-2019 LAMOUR Anthony
 //********************************************************************************************************************************************************************************
 
 #include "CPoint2D.h"
@@ -17,7 +17,7 @@ float CPoint2D::getPtX() const
 	return this->fltX;
 }
 
-void CPoint2D::setPtX(float fltX)
+void CPoint2D::setPtX(float const& fltX)
 {
 	this->fltX = fltX;
 }
@@ -27,17 +27,19 @@ float CPoint2D::getPtY() const
 	return this->fltY;
 }
 
-void CPoint2D::setPtY(float fltY)
+void CPoint2D::setPtY(float const& fltY)
 {
 	this->fltY = fltY;
 }
 
+//constructeur
 CPoint2D::CPoint2D()
 {
 	this->fltX = 0.0;
 	this->fltY = 0.0;
 }
 
+//destructeur
 CPoint2D::~CPoint2D()
 {
 }
